@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var desiredGrade: UITextField!
     @IBOutlet weak var examWorth: UITextField!
     @IBOutlet weak var neededGrade: UILabel!
+    @IBOutlet weak var extraCredit: UILabel!
+    
     @IBAction func calculate(_ sender: UIButton)
     {
         currentGrade.resignFirstResponder()
@@ -47,11 +49,12 @@ class ViewController: UIViewController {
         
         if x<=100
         {
-            view.backgroundColor = UIColor.init(red: 0.66, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
+            view.backgroundColor = UIColor.init(red: 0.66, green: 0.91, blue: 0.63, alpha: 1)
         }
         else
         {
-            
+            view.backgroundColor = UIColor.init(red: 0.85, green: 0.49, blue: 0.49, alpha: 1)
+            extraCredit.text = "Ask for extra credit"
         }
     }
     
@@ -59,6 +62,7 @@ class ViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        extraCredit.text = ""
         // Do any additional setup after loading the view.
     }
 

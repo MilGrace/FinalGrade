@@ -57,6 +57,13 @@
                                     <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nUd-It-ueE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ask for extra credit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gut-Ci-V5O">
+                                <rect key="frame" x="91" y="136" width="233" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -65,6 +72,7 @@
                         <outlet property="currentGrade" destination="bDF-qh-mBt" id="I4A-KG-zFx"/>
                         <outlet property="desiredGrade" destination="TN0-lr-QFY" id="Qsd-Mf-Puv"/>
                         <outlet property="examWorth" destination="AbL-O4-Wx7" id="4p9-Mf-Q3B"/>
+                        <outlet property="extraCredit" destination="gut-Ci-V5O" id="9oI-qZ-2zw"/>
                         <outlet property="neededGrade" destination="j4b-uT-qU1" id="R4O-3F-yIO"/>
                     </connections>
                 </viewController>
